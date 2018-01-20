@@ -54,11 +54,9 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function sumAndMultiply(a, b, c) {
-  var sum = a + b + c;
-  var multiply = a * b * c;
-  var array = [sum, multiply, a + ' and ' + b + ' and ' + c + ' sum to ' + sum + '.', 'The product of ' + a + ' and ' + b + ' and ' + c + ' is ' + multiply + '.'];
+  var array = [sum(c,sum(a,b)[0])[0], multiply(c,multiply(a,b)[0])[0], a + ' and ' + b + ' and ' + c + ' sum to ' + sum(c,sum(a,b)[0])[0] + '.', 'The product of ' + a + ' and ' + b + ' and ' + c + ' is ' + multiply(c,multiply(a,b)[0])[0] + '.'];
   return array;
-  //eslint-disable-line
+  //eslint-disable-aline
 }
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
